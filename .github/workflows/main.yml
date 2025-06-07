@@ -8,6 +8,13 @@ on:
     branches:
       - test
 
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deploy environment'
+        required: true
+        default: 'dev'
+
 jobs:
   build: 
       name: "environment setup"
