@@ -24,7 +24,7 @@ jobs:
           run: echo "Secrets are ${{ secrets.API_KEY }}"
 
         - name: using variables
-          run: echo "variables are ${{ env.NAME }}"
+          run: echo "variables are ${{ vars.NAME }}"
   test:
       name: "testing the python application"
       runs-on: ubuntu-latest
