@@ -8,4 +8,3 @@ def test_analyze_weather_valid_city():
 def test_analyze_weather_invalid_city():
     with pytest.raises(ValueError):
         analyze_weather("Unknown City")
-
